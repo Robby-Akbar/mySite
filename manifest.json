@@ -1,0 +1,16 @@
+{
+    "name": "Robby Akbar | Manusia Biasa",
+    "short_name": "Robby Akbar",
+    "description": "Aplikasi CV Robby Akbar",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#00c853",
+    "theme_color": "#00c853",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
