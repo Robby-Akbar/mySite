@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<link rel="shortcut icon" href="../images/icon.png"/>
+		<title>Spiral - Foto</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div id="header">
+			<div class="atas">
+				<a href="../index.html"><img src="../images/spiral.png" alt="Spiral"/></a>
+				<img src="../images/search.png" class="tombol">
+				<input type="text" class="search" name="search">
+			</div>
+		</div>
+		<div id="content">
+			<div class="tengah">
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<img src="../images/header_galeri.png" style="width:100%;min-height:350px;max-height:400px;">
+					</div>
+				</div>
+			</div>
+			<div class="bawah">
+				<ul>
+					<li><a href="../about.html" class="kanan">Tentang</a></li>
+					<li><a href="../moral_challenge.html">Moral Challenge</a></li>
+					<li><a href="../galeri/" class="active">Galeri</a></li>
+					<li><a href="../edukasi/">Laman Edukatif</a></li>
+					<li><a href="../">Beranda</a></li>
+				</ul>
+			</div>
+			<div class="menu">
+				<div id="posting">
+					<h1 style="margin: 0px 0px 0px 15px; color: #595959; float: left;">Foto</h1>
+					<hr style="height: 4px; background-color: #C3C3C3; border: none; clear: both;">
+					<div class="tiga">
+						<a href="#">
+							<img onclick="onClick(this)" class="myImg" alt="Bahaya Gadget" src="../images/gadget.jpg">
+							<center><h1>Bahaya Gadget</h1></center>
+						</a>
+					</div>
+					<div class="tiga">
+						<a href="#">
+							<img onclick="onClick(this)" class="myImg" alt="Fakta Manusia" src="../images/potret_kehidupan.jpg">
+							<center><h1>Fakta Manusia</h1></center>
+						</a>
+					</div>
+					<div class="tiga">
+						<a href="#">
+							<img onclick="onClick(this)" class="myImg" alt="Pandailah Bergaul" src="../images/foto3.jpg">
+							<center><h1>Pandailah Bergaul</h1></center>
+						</a>
+					</div>
+					<div class="tiga">
+						<a href="#">
+							<img onclick="onClick(this)" class="myImg" alt="Jaga Silahturahmi" src="../images/foto4.jpg">
+							<center><h1>Jaga Silahturahmi</h1></center>
+						</a>
+					</div>
+					<div id="myModal" class="modal" onclick="this.style.display='none'">
+  						<span class="close">x</span>
+  						<img class="modal-content" id="img01">
+  						<div id="caption"></div>
+					</div>
+				</div>
+			</div>
+			<div id="moral">
+				<table width="100%" height="100%">
+					<tr>
+						<td width="15%"></td>
+						<td width="5%" align="center" class="moral"><img src="../images/logo_terimakasih_moral_challenge.png"></td>
+						<td width="30%" align="center" class="moral">MORAL CHALLENGE?<br>Yuk Mulai..!!</td>
+						<td width="5%" align="center" class="moral"><h1>#6</h1></td>
+						<td width="30%" align="center" class="moral"><h2>BELAJAR MENGUCAP TERIMAKASIH</h2><p>Berterimakasih adalah tanda kita menghargai pemberian orang. Baik benda atau bantuan. Cobalah mengucap terimakasih setiap kali orang membantumu!</p></td>
+						<td width="15%"></td>
+					</tr>
+				</table>
+			</div>
+			<div id="footer">
+				<table width="100%">
+					<tr>
+						<td id="about" width="60%" bgcolor="#C3C3C3">
+							<h1>Tentang Kami</h1>
+							<div id="tentang">
+								<img src="../images/spiral.png">
+								<p>Inspire The Moral (Spiral) merupakan website yang bertujuan untuk menginspirasi semua orang mulai dari yang muda sampai yang tua. Dan juga memberikan Moral Challenge untuk Melakukan aksi nyata yang bermoral dan memberi inspirasi serta teladan bagi banyak orang. <a href="../about.html">Selengkapnya..</a></p>
+							</div>
+						</td>
+						<td class="footer" width="40%" bgcolor="#363636">
+							<h2>Ikuti Kami</h2>
+							<div id="share-buttons">
+								<!-- Facebook -->
+								<a href="http://www.facebook.com/spiral" target="_blank">
+									<div class="tooltip">
+										<img src="../images/logo_facebook.png" alt="Facebook" />
+										<span class="tooltiptext">Facebook</span>
+									</div>
+								</a>
+								<!-- Twitter -->
+								<a href="https://twitter.com/spiral" target="_blank">
+									<div class="tooltip">
+										<img src="../images/logo_twitter.png" alt="Twitter" />
+										<span class="tooltiptext">Twitter</span>
+									</div>
+								</a>
+								<!-- Instagram -->
+								<a href="https://instagram.com/spiral" target="_blank">
+									<div class="tooltip">
+										<img src="../images/logo_instagram.png" alt="Instagram" />
+										<span class="tooltiptext">Instagram</span>
+									</div>
+								</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script>
+			function onClick(element) {
+  				document.getElementById("img01").src = element.src;
+  				document.getElementById("img01").alt = element.alt;
+  				document.getElementById("caption").innerHTML = element.alt;
+  				document.getElementById("myModal").style.display = "block";
+			}
+		</script>
+		<script type="text/javascript" src="../js/modal.js"></script>
+	</body>
+</html>
