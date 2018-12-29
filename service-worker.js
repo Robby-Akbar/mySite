@@ -1,11 +1,12 @@
 const CACHE_NAME = "firstpwa";
 var urlsToCache = [
   "/",
-  "/icon.png",
+  "/images/icons",
+  "/images/icon.png",
   "/nav.html",
   "/index.html",
-  "/intp.png",
-  "/kepribadian.png",
+  "/images/intp.png",
+  "/images/kepribadian.png",
   "/manifest.json",
   "/pages/home.html",
   "/pages/cv.html",
